@@ -1,0 +1,61 @@
+# ==========================================================
+# = Solver Results                                         =
+# ==========================================================
+# ----------------------------------------------------------
+#   Problem Information
+# ----------------------------------------------------------
+Problem: 
+- Name: unknown
+  Lower bound: 1500000.0
+  Upper bound: 1500000.0
+  Number of objectives: 1
+  Number of constraints: 19
+  Number of variables: 13
+  Number of nonzeros: 33
+  Sense: minimize
+# ----------------------------------------------------------
+#   Solver Information
+# ----------------------------------------------------------
+Solver: 
+- Status: ok
+  Termination condition: optimal
+  Statistics: 
+    Branch and bound: 
+      Number of bounded subproblems: 0
+      Number of created subproblems: 0
+  Error rc: 0
+  Time: 0.03401827812194824
+# ----------------------------------------------------------
+#   Solution Information
+# ----------------------------------------------------------
+Solution: 
+- number of solutions: 1
+  number of solutions displayed: 1
+- Gap: 0.0
+  Status: feasible
+  Message: None
+  Objective:
+    minCost:
+      Value: 1500000
+  Variable:
+    flow[Berlin,Budapest]:
+      Value: 45000
+    flow[Berlin,Warschau]:
+      Value: 65000
+    flow[Budapest,Leningrad]:
+      Value: 25000
+    flow[Budapest,Moscow]:
+      Value: 15000
+    flow[Budapest,Stalingrad]:
+      Value: 75000
+    flow[Munic,Budapest]:
+      Value: 70000
+    flow[Munic,Warschau]:
+      Value: 45000
+    flow[Warschau,Leningrad]:
+      Value: 50000
+    flow[Warschau,Moscow]:
+      Value: 45000
+    flow[Warschau,Stalingrad]:
+      Value: 15000
+  Constraint: No values

@@ -1,0 +1,53 @@
+# Nodes set
+set N := Berlin Leipzig Munic Warschau Budapest Leningrad Moscow Stalingrad;
+# Arcs set
+set A := (Berlin, Warschau) (Berlin,Budapest) (Leipzig, Warschau) (Leipzig, Budapest) (Munic, Warschau) (Munic, Budapest) (Warschau, Leningrad) (Warschau, Moscow) (Warschau, Stalingrad) (Budapest, Leningrad) (Budapest, Moscow) (Budapest, Stalingrad);
+
+param origin := Berlin Leipzig Munic;
+#param destination := Leningrad Moscow Stalingrad;
+#param transition := Warschau Budapest;
+
+# List of estimated costs for the transportation of one unit between each of the nodes
+# Transport costs in DMARK per soldier
+param: costs:= 
+Berlin Warschau 3.4
+Leipzig Warschau 2.1
+Munic Warschau 1.3
+
+Berlin Budapest 4.2
+Leipzig Budapest 2.5
+Munic Budapest 1.2
+
+Warschau Leningrad 4.1
+Budapest Leningrad 4.5
+
+Warschau Moscow 4.8
+Budapest Moscow 3.5
+
+Warschau Stalingrad 5.1
+Budapest Stalingrad 3.8;
+
+# The capacity at each arc in thousand units 
+param: capacity:= 
+Berlin Warschau 65000
+Leipzig Warschau 50000
+Munic Warschau 45000
+
+Berlin Budapest 45000
+Leipzig Budapest 65000
+Munic Budapest 70000
+
+Warschau Leningrad 50000
+Budapest Leningrad 45000
+
+Warschau Moscow 55000
+Budapest Moscow 50000
+
+Warschau Stalingrad 60000
+Budapest Stalingrad 75000;
+
+# The demand of soldiers at each target
+param: demand:=
+Leningrad 75000
+Moscow 60000
+Stalingrad 90000;

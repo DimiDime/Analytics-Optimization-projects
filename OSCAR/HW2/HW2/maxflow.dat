@@ -1,0 +1,31 @@
+set C := Ukraine Turkey Romania Poland Israel Greece Germany SaudiArabia Egypt UAE Argelia EUDistributor;  #Set of nodes, each country is one
+set T := (Ukraine,Turkey) (Ukraine,Romania) (Ukraine,Poland) (Turkey,Israel) (Turkey,Greece) (Romania,Turkey) (Romania,Greece) (Poland,Germany) (Israel,UAE) (Israel,SaudiArabia) (Greece,Israel) (Greece,Egypt) (Greece,EUDistributor) (Germany,EUDistributor) (SaudiArabia,UAE) (SaudiArabia, Egypt) (Egypt,Argelia);  #All the connections
+#set M := UAE Argelia EUDistributor;
+#capacity of the nodes
+param initial := Ukraine;
+param: destinations := 
+UAE 
+Argelia 
+EUDistributor;
+param: capacity :=
+Ukraine Turkey 800
+Ukraine Romania 400
+Ukraine Poland 400
+Turkey Israel 600
+Turkey Greece 500
+Romania Turkey 300
+Romania Greece 300
+Poland Germany 400
+Israel UAE 400 
+Israel SaudiArabia 600 
+Greece Israel 400
+Greece Egypt 300
+Greece EUDistributor 300
+Germany EUDistributor 800
+SaudiArabia UAE 450
+SaudiArabia Egypt 200
+Egypt Argelia 500;
+param: minimums:= 
+UAE 500 
+Argelia 400 
+EUDistributor 600;

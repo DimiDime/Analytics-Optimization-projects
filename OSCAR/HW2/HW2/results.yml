@@ -1,0 +1,73 @@
+# ==========================================================
+# = Solver Results                                         =
+# ==========================================================
+# ----------------------------------------------------------
+#   Problem Information
+# ----------------------------------------------------------
+Problem: 
+- Name: unknown
+  Lower bound: 1600.0
+  Upper bound: 1600.0
+  Number of objectives: 1
+  Number of constraints: 29
+  Number of variables: 18
+  Number of nonzeros: 49
+  Sense: maximize
+# ----------------------------------------------------------
+#   Solver Information
+# ----------------------------------------------------------
+Solver: 
+- Status: ok
+  Termination condition: optimal
+  Statistics: 
+    Branch and bound: 
+      Number of bounded subproblems: 0
+      Number of created subproblems: 0
+  Error rc: 0
+  Time: 0.04059767723083496
+# ----------------------------------------------------------
+#   Solution Information
+# ----------------------------------------------------------
+Solution: 
+- number of solutions: 1
+  number of solutions displayed: 1
+- Gap: 0.0
+  Status: feasible
+  Message: None
+  Objective:
+    obj:
+      Value: 1600
+  Variable:
+    flow[Egypt,Argelia]:
+      Value: 400
+    flow[Germany,EUDistributor]:
+      Value: 400
+    flow[Greece,EUDistributor]:
+      Value: 300
+    flow[Greece,Egypt]:
+      Value: 300
+    flow[Israel,SaudiArabia]:
+      Value: 200
+    flow[Israel,UAE]:
+      Value: 400
+    flow[Poland,Germany]:
+      Value: 400
+    flow[Romania,Greece]:
+      Value: 300
+    flow[Romania,Turkey]:
+      Value: 100
+    flow[SaudiArabia,Egypt]:
+      Value: 100
+    flow[SaudiArabia,UAE]:
+      Value: 100
+    flow[Turkey,Greece]:
+      Value: 300
+    flow[Turkey,Israel]:
+      Value: 600
+    flow[Ukraine,Poland]:
+      Value: 400
+    flow[Ukraine,Romania]:
+      Value: 400
+    flow[Ukraine,Turkey]:
+      Value: 800
+  Constraint: No values
